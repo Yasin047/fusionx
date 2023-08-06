@@ -1,0 +1,16 @@
+/* Claimbutton.css */
+.inner-button {
+    background-color: #0fe946;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .inner-button:hover {
+    background-color: #ffc700;
+  }
+  

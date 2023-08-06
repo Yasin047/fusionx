@@ -1,0 +1,68 @@
+@import url('typeface-exo-2'); /* Import the Exo 2 font */
+
+.heading-container {
+  position: relative;
+  top: 90px;
+  margin-left: 65px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif; /* Use the "Exo 2" font or any other futuristic font */
+  /* Neon effect using box-shadow */
+  background: linear-gradient(45deg, #17e9c6, #fd08c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 15px;
+  animation: neonGlow 1s ease-in-out infinite alternate;
+
+  /* Additional properties for clean and modern look */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+/* Neon glow animation */
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(56, 32, 48, 0.8), 0 0 30px rgba(62, 24, 231, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(8, 238, 150, 0.8), 0 0 40px rgba(218, 44, 189, 0.6);
+  }
+}
+
+@keyframes pulsateNew {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 1), 0 0 35px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Apply the pulsating animation */
+.heading {
+  animation: neonGlow 1s ease-in-out infinite alternate, pulsateNew 2s ease-in-out infinite;
+}
+
+/* Hover effect */
+.heading:hover {
+  background: linear-gradient(45deg, #17e9c6, #fd08c8);
+  box-shadow: 0 0 30px rgba(8, 238, 150, 0.8), 0 0 40px rgba(218, 44, 189, 0.6);
+  font-size: 56px;
+}
